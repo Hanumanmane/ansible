@@ -1,0 +1,6 @@
+- name: Gather Fact
+  hosts: all
+  tasks: 
+    - name : print hello world
+      debug:
+        msg: "Hello World"
