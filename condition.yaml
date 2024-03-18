@@ -6,5 +6,5 @@
     - name: print os
       debug:
         msg: "This is Amazon machine"
-      when: ansible_distribution == "Amazon" and ansible_os_family == "RedHat"
+      when: ansible_distribution == "CentOS" or ansible_os_family == "RedHat"
 
