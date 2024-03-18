@@ -1,9 +1,8 @@
-- name : Conditions
-  hosts : all
-  tasks : 
-
-    - name : print os
-      debug : 
-        msg : "This is Amazon machine"
-      when : ansible_distribution == "Amazon Linux"
-      
+---
+- name: Conditions
+  hosts: all
+  tasks:
+    - name: print os
+      debug:
+        msg: "This is Amazon machine"
+      when: ansible_distribution == "Amazon"
