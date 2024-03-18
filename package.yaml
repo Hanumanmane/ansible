@@ -1,0 +1,15 @@
+- name : Install appache web server
+  hosts : all
+  gather_facts : true
+  tasks :
+    - name : install httpd
+      yum : 
+        name : httpd
+        state : present
+      when : ansible_distribution == "Amazon" and ansible_os_family == "RedHat"
+
+      - name : install Apache2
+      apt : 
+        name : Apache2
+        state : present
+      when : ansible_distribution == "Ubuntu" and ansible_os_family == "Debian"
