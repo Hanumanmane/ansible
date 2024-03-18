@@ -1,0 +1,13 @@
+- name : Ignore Error
+  hosts : all
+  gather_fact : true
+  tasks : 
+    - name : print hello world
+      debug : 
+        msg : "hello world"
+    - name : print os
+      debug :
+        msg : "{{ansible_distribution}}"
+    - name : print cbz
+      debug : 
+        msg : "welcome to pune"
