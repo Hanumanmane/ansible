@@ -8,6 +8,6 @@
     - name : print os
       debug :
         msg : "{{ansible_distribution}}"
-    - name : print cbz
+  - name : print cbz
       debug : 
         msg : "welcome to pune"
