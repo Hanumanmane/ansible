@@ -7,7 +7,7 @@
         msg : "hello world"
     - name : print os
       debug :
-        msg : "{{ansible_distribution}}"
+        msg : "{{ansible_distributio}}"
       ignore_errors : true
     - name : print cbz
       debug : 
