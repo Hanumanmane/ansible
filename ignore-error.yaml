@@ -1,6 +1,6 @@
 - name : Ignore Error
   hosts : all
-  gather_fact : true
+  gather_facts : true
   tasks : 
     - name : print hello world
       debug : 
