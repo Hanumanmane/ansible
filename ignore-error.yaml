@@ -8,6 +8,7 @@
     - name : print os
       debug :
         msg : "{{ansible_distribution}}"
+      ignore_errors : true
     - name : print cbz
       debug : 
         msg : "welcome to pune"
