@@ -7,3 +7,6 @@
     - name : print os
       debug : 
         msg : "{{ansible_distribution}}"
+    - name : print family
+      debug :
+        msg : "{{ansible_os_family}}"
