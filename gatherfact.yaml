@@ -1,5 +1,6 @@
 - name: Gather Fact
   hosts: all
+  gather_facts : true #### for the global gatherfact
   tasks: 
     - name : print hello world
       debug:
