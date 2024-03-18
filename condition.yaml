@@ -1,6 +1,7 @@
 ---
 - name: Conditions
   hosts: all
+  gather_facts : true #### for the global gatherfact
   tasks:
     - name: print os
       debug:
