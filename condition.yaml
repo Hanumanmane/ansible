@@ -4,6 +4,6 @@
 
     - name : print os
       debug : 
-        msg : "This is CENTOS machine"
-      when : ansible_distribution == "CentOS"
+        msg : "This is Amazon machine"
+      when : ansible_distribution == "Amazon Linux"
       
