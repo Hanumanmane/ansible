@@ -10,3 +10,6 @@
     - name : print family
       debug :
         msg : "{{ansible_os_family}}"
+    - name : print address
+      debug :
+        msg : "{{ansible_default_ipv4.address}}"
