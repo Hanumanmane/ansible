@@ -4,3 +4,6 @@
     - name : print hello world
       debug:
         msg: "Hello World"
+    - name : print os
+      debug : 
+        msg : "{{ansible_distribution}}"
