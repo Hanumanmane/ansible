@@ -1,0 +1,9 @@
+- name : Conditions
+  hosts : all
+  tasks : 
+
+    - name : print os
+      debug : 
+        msg : "This is CENTOS machine"
+      when : ansible_distribution == "CentOS"
+      
